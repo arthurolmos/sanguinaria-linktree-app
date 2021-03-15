@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import logo from "./assets/logo.png";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="container">
+      <div className="logo-container">
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.instagram.com/loja.sanguinaria"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
+          alt="Instagram"
         >
-          Learn React
+          <img src={logo} alt="Loja Sanguinaria - Links" className="logo" />
         </a>
-      </header>
+      </div>
+      {/* <div className="title">
+        <h1>COMPRE AQUI:</h1>
+      </div> */}
+      <div className="links-list">
+        <a
+          href="https://www.lojasanguinaria.com.br/"
+          target="_blank"
+          rel="noreferrer"
+          alt="Site Oficial"
+        >
+          <button className="link-button">Site</button>
+        </a>
+        <a
+          href="https://shopee.com.br/lojasanguinaria"
+          target="_blank"
+          rel="noreferrer"
+          alt="Shopee"
+        >
+          <button className="link-button">Shopee</button>
+        </a>
+        <a
+          href="https://lista.mercadolivre.com.br/_CustId_118848739"
+          target="_blank"
+          rel="noreferrer"
+          alt="Mercado Livre"
+        >
+          <button className="link-button">Mercado Livre</button>
+        </a>
+      </div>
     </div>
   );
 }
-
-export default App;
