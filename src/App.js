@@ -34,14 +34,14 @@ export default function App() {
         >
           <button className="link-button">Shopee</button>
         </a>
-        <a
+        {/* <a
           href="https://lista.mercadolivre.com.br/_CustId_118848739"
           target="_blank"
           rel="noreferrer"
           alt="Mercado Livre"
         >
           <button className="link-button">Mercado Livre</button>
-        </a>
+        </a> */}
       </div>
     </div>
   );
